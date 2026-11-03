@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sai Anil Kumar Deyyala | DevOps and Platform Engineer</title>
+  <meta name="description" content="Portfolio of Sai Anil Kumar Deyyala, a DevOps and Platform Engineer in Hyderabad working with Azure, AWS, Kubernetes, Terraform, CI/CD and GitOps.">
+  <meta name="theme-color" content="#080c17">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sai Anil Kumar Deyyala | DevOps and Platform Engineer">
+  <meta property="og:description" content="Azure and AWS infrastructure, Kubernetes, Terraform, CI/CD, GitOps and observability. 4+ years of experience.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234da3ff'/%3E%3Cstop offset='1' stop-color='%238b7cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-size='26' text-anchor='middle' fill='%2306101f' font-family='Arial' font-weight='700'%3ESA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try {
+      var saved = localStorage.getItem('theme');
+      if (saved === 'light' || saved === 'dark') document.documentElement.setAttribute('data-theme', saved);
+    } catch (e) {}
+    document.documentElement.classList.remove('no-js');
+  </script>
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div id="progress" aria-hidden="true"></div>
+
+  <header class="top" id="top-bar">
+    <div class="pill">
+      <a class="logo" href="#top" aria-label="Back to top">SA</a>
+      <nav id="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#stack">Stack</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#credentials">Credentials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="top-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to the light theme" title="Switch theme">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <p class="status"><span class="pulse" aria-hidden="true"></span>Hyderabad, India</p>
+        <h1 aria-label="Sai Anil Kumar Deyyala">
+          <span class="ln" aria-hidden="true"><span>Sai Anil</span></span>
+          <span class="ln" aria-hidden="true"><span>Kumar</span></span>
+          <span class="ln" aria-hidden="true"><span>Deyyala</span></span>
+        </h1>
+        <p class="role fade-in">DevOps and Platform Engineer</p>
+        <p class="lead fade-in">I automate cloud infrastructure and ship microservices on Azure and AWS. Terraform, Kubernetes and CI/CD pipelines are my daily tools, and I add monitoring so every release stays visible. I also have a machine learning and MLOps background.</p>
+        <div class="actions fade-in">
+          <a class="btn primary magnetic" href="#projects">See my work</a>
+          <a class="btn ghost magnetic" href="assets/Sai_Anil_Kumar_Resume.pdf" download>Download résumé</a>
+        </div>
+        <ul class="social fade-in" aria-label="Profiles">
+          <li><a href="https://github.com/SaiAnilKumarDeyyala" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/sai-anil-kumar-deyyala/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="mailto:saianildeyyala@gmail.com">Email</a></li>
+        </ul>
+      </div>
+
+      <div class="console-wrap">
+        <figure class="console" id="console" role="img" aria-label="Illustrative animation: a CI/CD pipeline runs through seven stages and rolls a new version out across twelve Kubernetes pods while a request-rate chart updates.">
+          <div class="c-bar">
+            <span class="lights"><i></i><i></i><i></i></span>
+            <span class="c-title">release pipeline, branch main</span>
+            <span class="badge" id="c-badge" data-state="running">Running</span>
+          </div>
+          <ol class="stages" id="stages">
+            <li><span class="s-dot"></span><span class="s-name">Commit</span></li>
+            <li><span class="s-dot"></span><span class="s-name">Build</span></li>
+            <li><span class="s-dot"></span><span class="s-name">Test</span></li>
+            <li><span class="s-dot"></span><span class="s-name">Scan</span></li>
+            <li><span class="s-dot"></span><span class="s-name">Plan</span></li>
+            <li><span class="s-dot"></span><span class="s-name">Apply</span></li>
+            <li><span class="s-dot"></span><span class="s-name">Deploy</span></li>
+          </ol>
+          <div class="c-grid">
+            <div class="c-box">
+              <div class="c-head"><span>aks-prod pods</span><span id="pod-count">12/12 v1</span></div>
+              <div class="pods" id="pods"></div>
+            </div>
+            <div class="c-box">
+              <div class="c-head"><span>request rate</span><span class="dot-live">live</span></div>
+              <svg class="spark" id="hero-spark"></svg>
+            </div>
+          </div>
+          <div class="c-log"><span class="prompt">$</span><span id="c-log">git push origin main</span><span class="caret"></span></div>
+        </figure>
+        <p class="note">Illustrative animation, not live data.</p>
+      </div>
+    </section>
+
+    <!-- TOOLS MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="m-row">
+        <div class="m-track">
+          <span style="--c:var(--blue)">Azure</span><span style="--c:var(--amber)">AWS</span><span style="--c:var(--blue)">Kubernetes</span><span style="--c:var(--blue)">AKS</span><span style="--c:var(--violet)">Terraform</span><span style="--c:var(--blue)">Helm</span><span style="--c:var(--teal)">Istio</span><span style="--c:var(--blue)">Docker</span><span style="--c:var(--green)">GitLab CI/CD</span><span style="--c:var(--blue)">Azure DevOps</span>
+        </div>
+      </div>
+      <div class="m-row reverse">
+        <div class="m-track">
+          <span style="--c:var(--amber)">ArgoCD</span><span style="--c:var(--red)">Jenkins</span><span style="--c:var(--amber)">Prometheus</span><span style="--c:var(--amber)">Grafana</span><span style="--c:var(--violet)">Ansible</span><span style="--c:var(--green)">Python</span><span style="--c:var(--teal)">Terratest</span><span style="--c:var(--teal)">Checkov</span><span style="--c:var(--pink)">MLflow</span><span style="--c:var(--pink)">PyTorch</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="sec-head reveal"><h2>About</h2></div>
+      <div class="about-grid">
+        <div class="prose reveal">
+          <p>I am a DevOps and Platform Engineer in Hyderabad. For the last four-plus years I have designed, automated and run cloud infrastructure on Azure and AWS, with Terraform, Kubernetes and CI/CD pipelines doing most of the heavy lifting.</p>
+          <p>At Thoughtworks I work with two clients. For a Singapore central government project I run microservices on AKS and maintain the GitLab pipeline templates that provision and deploy to Azure. For a US client I manage more than 15 services on Azure.</p>
+          <p>Before DevOps I worked on machine learning, so MLOps and AI infrastructure feel like familiar ground. I like turning one-off setups into reusable, tested and observable workflows.</p>
+        </div>
+
+        <div class="panel career reveal" style="--d:.1s">
+          <div class="career-top">
+            <span class="big" id="tenure">4 yrs 8 mos</span>
+            <span class="sub">in DevOps and cloud engineering, one bar per month</span>
+          </div>
+          <div class="career-bar" id="career-bar" role="group" tabindex="0" aria-label="Career timeline with one bar per month since March 2022. Use the left and right arrow keys to read each month."></div>
+          <p class="career-cap" id="career-cap" aria-live="polite">Hover or focus the bar to read any month.</p>
+          <ul class="legend" id="career-legend">
+            <li data-role="0"><i style="--c:var(--amber)"></i>DevOps Intern<small>Mar to Jul 2022</small></li>
+            <li data-role="1"><i style="--c:var(--blue)"></i>DevOps Engineer<small>Aug 2022 to May 2023</small></li>
+            <li data-role="2"><i style="--c:var(--violet)"></i>Senior DevOps Engineer<small>Jun 2023 to Jun 2024</small></li>
+            <li data-role="3"><i style="--c:var(--green)"></i>Infrastructure Consultant<small>Jul 2024 to present</small></li>
+          </ul>
+          <dl class="mini">
+            <div><dt>services managed on Azure for one client</dt><dd><span data-count="15" data-suffix="+">15+</span></dd></div>
+            <div><dt>cloud platforms, Azure and AWS</dt><dd><span data-count="2">2</span></dd></div>
+            <div><dt>cloud and AI certifications</dt><dd><span data-count="6">6</span></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="section" id="stack">
+      <div class="sec-head reveal"><h2>The stack I work in</h2></div>
+      <p class="sec-lead reveal">Read it from the bottom up: foundations and cloud at the base, applications and ML at the top. Hover a layer to light it up.</p>
+      <div class="layers" data-stack>
+        <div class="layer" style="--c:var(--pink)">
+          <h3>Machine learning and MLOps</h3>
+          <div class="chips"><span>ML pipelines</span><span>MLflow</span><span>PyTorch</span><span>OpenCV</span><span>pandas</span><span>NumPy</span><span>Transfer learning</span><span>Jupyter Notebook</span></div>
+        </div>
+        <div class="layer" style="--c:var(--amber)">
+          <h3>Monitoring and observability</h3>
+          <div class="chips"><span>Prometheus</span><span>Grafana</span><span>Azure Monitor</span><span>Application Insights</span><span>Log Analytics</span></div>
+        </div>
+        <div class="layer" style="--c:var(--green)">
+          <h3>CI/CD and GitOps</h3>
+          <div class="chips"><span>GitLab CI/CD</span><span>Azure DevOps</span><span>Jenkins</span><span>ArgoCD</span><span>Git</span><span>GitHub</span></div>
+        </div>
+        <div class="layer" style="--c:var(--blue)">
+          <h3>Containers and orchestration</h3>
+          <div class="chips"><span>Docker</span><span>Kubernetes</span><span>AKS</span><span>Helm</span><span>Istio</span><span>NGINX Ingress</span></div>
+        </div>
+        <div class="layer" style="--c:var(--violet)">
+          <h3>Infrastructure as code and testing</h3>
+          <div class="chips"><span>Terraform</span><span>Ansible</span><span>Terratest</span><span>Checkov</span></div>
+        </div>
+        <div class="layer" style="--c:var(--teal)">
+          <h3>Cloud networking and security</h3>
+          <div class="chips"><span>VNet</span><span>NIC</span><span>NSG</span><span>Private Endpoints</span><span>Private Link Service</span><span>Load Balancer</span><span>Front Door</span><span>WAF</span><span>Key Vault</span><span>Managed Identity</span><span>Secrets Store CSI Driver</span></div>
+        </div>
+        <div class="layer" style="--c:var(--text)">
+          <h3>Cloud platforms</h3>
+          <div class="chips"><span>Microsoft Azure</span><span>AWS</span></div>
+        </div>
+        <div class="layer" style="--c:var(--muted)">
+          <h3>Foundations</h3>
+          <div class="chips"><span>Linux</span><span>Windows</span><span>Python</span><span>Bash</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="sec-head reveal"><h2>Experience</h2></div>
+      <p class="sec-lead reveal">My career as a commit history. The latest commit is at the top.</p>
+
+      <div class="graph" id="graph">
+        <div class="rail-fill" aria-hidden="true"></div>
+
+        <article class="commit reveal">
+          <span class="node head" aria-hidden="true"></span>
+          <div class="panel card">
+            <header>
+              <div>
+                <h3>Infrastructure Consultant</h3>
+                <p class="org">Thoughtworks Technologies (India) Pvt. Ltd., Hyderabad</p>
+              </div>
+              <div class="meta"><span class="date">July 2024 to present</span><span class="tagbadge" title="Current role">HEAD</span></div>
+            </header>
+
+            <div class="tabs" data-tabs>
+              <div class="tablist" role="tablist" aria-label="Thoughtworks client projects">
+                <button role="tab" id="tab-sg" aria-controls="panel-sg" aria-selected="true" type="button">Singapore client: central government</button>
+                <button role="tab" id="tab-us" aria-controls="panel-us" aria-selected="false" tabindex="-1" type="button">US client: Azure infrastructure</button>
+                <span class="tab-ind" aria-hidden="true"></span>
+              </div>
+              <div class="tabpanel" role="tabpanel" id="panel-sg" aria-labelledby="tab-sg">
+                <ul>
+                  <li>Design and maintain reusable GitLab CI/CD pipeline templates that automate infrastructure provisioning and application deployments across Azure environments.</li>
+                  <li>Deploy and operate microservices on Azure Kubernetes Service, develop Helm charts and configure NGINX and Istio ingress for traffic management.</li>
+                  <li>Integrate Kubernetes secrets with Azure Key Vault through the Secrets Store CSI Driver and connect applications to Azure database and platform services.</li>
+                  <li>Provision MySQL and PostgreSQL Flexible Servers, Service Bus, Storage Accounts, Azure Functions and Cosmos DB through automated deployment workflows.</li>
+                  <li>Plan and configure networking: VNet address allocation, VNet peering, firewall rules, Private Endpoints, Azure Load Balancer and federated identity integration.</li>
+                  <li>Configure Application Insights, Log Analytics, Azure Alerts and dashboards for observability and troubleshooting.</li>
+                  <li>Migrate Azure MySQL databases and Storage Accounts, estimate environment costs and provision complete Azure environments.</li>
+                  <li>Work with developers to troubleshoot application, networking, database and deployment issues.</li>
+                </ul>
+              </div>
+              <div class="tabpanel" role="tabpanel" id="panel-us" aria-labelledby="tab-us" hidden>
+                <ul>
+                  <li>Manage 15+ independent monolithic services on Azure App Service and Azure Container Apps, supporting their infrastructure and deployment workflows.</li>
+                  <li>Develop reusable infrastructure-as-code templates and Azure DevOps CI/CD pipelines that automate provisioning and application deployments.</li>
+                  <li>Provision and manage networking, compute, storage, database, security and monitoring resources: VNets, NSGs, Azure MySQL, SQL Database, Key Vault, Service Bus, Front Door and Application Insights.</li>
+                  <li>Configure Managed Identities, Private Link Service, Private Endpoints, WAF and Azure Load Balancer for secure infrastructure.</li>
+                  <li>Manage Azure Data Factory, Functions, Storage Accounts, Container Registry, Virtual Machines and VM Scale Sets across application environments.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="commit reveal">
+          <span class="node" aria-hidden="true"></span>
+          <div class="panel card">
+            <header>
+              <div>
+                <h3>Senior DevOps Engineer</h3>
+                <p class="org">Tiger Analytics, India</p>
+              </div>
+              <div class="meta"><span class="date">June 2023 to June 2024</span></div>
+            </header>
+            <ul>
+              <li>Deployed a microservices application end to end on AKS, containerizing each application with Docker and orchestrating workloads with Kubernetes.</li>
+              <li>Wrote Kubernetes manifests for Deployments, Secrets, ConfigMaps, Services and other resources to standardize microservice deployments.</li>
+              <li>Configured Istio ingress and service mesh resources, and troubleshot Kubernetes networking and application connectivity.</li>
+              <li>Provisioned Azure infrastructure with reusable Terraform configurations and built Azure DevOps pipelines for infrastructure and application deployments.</li>
+              <li>Implemented Prometheus and Grafana monitoring for nodes, cluster CPU and memory, and service metrics such as request traffic and throughput.</li>
+              <li>Delivered a chaos engineering proof of concept to explore application resilience and infrastructure failure scenarios.</li>
+              <li>Migrated Azure Data Factory and Azure Databricks workloads between environments for consistent data platform deployments.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="commit reveal">
+          <span class="node" aria-hidden="true"></span>
+          <div class="panel card">
+            <header>
+              <div>
+                <h3>DevOps Engineer</h3>
+                <p class="org">Tiger Analytics, India</p>
+              </div>
+              <div class="meta"><span class="date">August 2022 to May 2023</span></div>
+            </header>
+            <ul>
+              <li>Deployed and managed Azure and AWS infrastructure with Terraform, using Azure DevOps and Jenkins pipelines for automated provisioning.</li>
+              <li>Built CI/CD pipelines for infrastructure and applications, including deployment automation for a monolithic Java application.</li>
+              <li>Migrated Azure Data Factory and Azure Databricks assets across environments to keep data platform configurations consistent.</li>
+              <li>Integrated Terratest for infrastructure testing and Checkov for policy scanning to strengthen deployment validation and security checks.</li>
+              <li>Developed automation scripts in Python, Go and shell for infrastructure operations and deployment workflows.</li>
+              <li>Worked with Docker, Kubernetes, Linux, Git, GitHub, Prometheus and Grafana across cloud infrastructure and DevOps workflows.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="commit reveal">
+          <span class="node" aria-hidden="true"></span>
+          <div class="panel card">
+            <header>
+              <div>
+                <h3>DevOps Intern</h3>
+                <p class="org">Tiger Analytics, India</p>
+              </div>
+              <div class="meta"><span class="date">March 2022 to July 2022</span></div>
+            </header>
+            <ul>
+              <li>Developed Azure DevOps CI/CD pipelines that automated infrastructure deployments on Microsoft Azure.</li>
+              <li>Containerized a Java application with Docker and deployed it to Kubernetes.</li>
+              <li>Created Terraform configurations for Azure, configured virtual machines and handled routine Linux and DevOps operations.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="commit reveal">
+          <span class="node branch" aria-hidden="true"></span>
+          <div class="panel card">
+            <header>
+              <div>
+                <h3>Machine Learning Intern</h3>
+                <p class="org">Indian Servers (software development company), India</p>
+              </div>
+              <div class="meta"><span class="date">April 2021 to June 2021</span></div>
+            </header>
+            <ul>
+              <li>Worked on machine learning workflows with Python, pandas, NumPy, Jupyter Notebook and Google Colab, applying supervised, unsupervised and semi-supervised techniques.</li>
+              <li>Implemented linear regression, logistic regression, decision trees, random forests, KNN, K-Means clustering and classification.</li>
+              <li>Built a COVID-19 detection solution from chest X-ray images with PyTorch and transfer learning, and a PUBG enemy detection project with OpenCV.</li>
+              <li>Worked with ML pipelines and MLflow for experimentation and model development.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="sec-head reveal"><h2>Projects</h2></div>
+
+      <div class="projects">
+        <article class="panel project reveal">
+          <div class="p-info">
+            <h3>AKS Microservices Platform</h3>
+            <ul>
+              <li>Designed and deployed a containerized microservices platform on AKS, using Docker and Kubernetes manifests for the workloads and their supporting resources.</li>
+              <li>Configured Helm charts and Istio ingress to manage deployments, service communication and inbound traffic routing.</li>
+              <li>Set up Prometheus and Grafana to track cluster infrastructure, resource use, request traffic and service throughput.</li>
+            </ul>
+            <div class="chips"><span>Azure</span><span>Kubernetes</span><span>Docker</span><span>Helm</span><span>Istio</span><span>Prometheus</span><span>Grafana</span></div>
+          </div>
+          <div class="viz dash">
+            <div class="d-head"><span>Traffic and throughput</span><span class="keys"><b style="--c:var(--blue)">requests</b><b style="--c:var(--green)">throughput</b></span></div>
+            <svg class="spark big" id="proj-spark"></svg>
+            <p class="viz-note">Illustrative chart, not live data.</p>
+          </div>
+        </article>
+
+        <article class="panel project reveal">
+          <div class="p-info">
+            <h3>Multi-Environment Azure Infrastructure Automation</h3>
+            <ul>
+              <li>Developed reusable infrastructure-as-code configurations and CI/CD pipeline templates that automate Azure resource provisioning and application deployment.</li>
+              <li>Integrated Terratest and Checkov into the workflow for automated testing and policy scanning.</li>
+              <li>Provisioned networking, compute, storage, databases, security and monitoring resources across multiple environments.</li>
+            </ul>
+            <div class="chips"><span>Terraform</span><span>Azure DevOps</span><span>GitLab CI/CD</span><span>Terratest</span><span>Checkov</span></div>
+          </div>
+          <div class="viz term" id="term">
+            <div class="t-bar"><span class="lights"><i></i><i></i><i></i></span><span>pipeline.log</span><button type="button" id="term-replay" class="replay">Replay</button></div>
+            <div class="t-body" id="term-body">
+              <div class="tl cmd">$ git push origin main</div>
+              <div class="tl dim">pipeline started on 3 environments</div>
+              <div class="tl cmd">$ checkov -d ./infra</div>
+              <div class="tl ok">policy scan finished</div>
+              <div class="tl cmd">$ terraform plan</div>
+              <div class="tl add">  + azurerm_virtual_network.main</div>
+              <div class="tl add">  + azurerm_private_endpoint.database</div>
+              <div class="tl chg">  ~ azurerm_key_vault.app</div>
+              <div class="tl dim">Plan: 2 to add, 1 to change, 0 to destroy.</div>
+              <div class="tl cmd">$ terraform apply -auto-approve</div>
+              <div class="tl ok">Apply complete! 2 added, 1 changed, 0 destroyed.</div>
+            </div>
+            <p class="viz-note">Illustrative output.</p>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="sub-h reveal">Earlier machine learning work</h3>
+      <div class="ml-row" data-stagger>
+        <div class="panel ml">
+          <h4>COVID-19 detection from chest X-rays</h4>
+          <p>Image classification with PyTorch and transfer learning.</p>
+          <div class="chips"><span>PyTorch</span><span>Transfer learning</span></div>
+        </div>
+        <div class="panel ml">
+          <h4>PUBG enemy detection</h4>
+          <p>Object detection on game footage with OpenCV.</p>
+          <div class="chips"><span>OpenCV</span><span>Python</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREDENTIALS -->
+    <section class="section" id="credentials">
+      <div class="sec-head reveal"><h2>Credentials</h2></div>
+      <div class="certs" data-stagger>
+        <div class="cert feature">
+          <span class="badge-ic" style="--c:var(--violet)">CCDV-F</span>
+          <div><h3>Claude Certified Developer, Foundations</h3><p>Anthropic</p></div>
+        </div>
+        <div class="cert"><span class="badge-ic" style="--c:var(--blue)">CKA</span><div><h3>Certified Kubernetes Administrator</h3><p>CNCF</p></div></div>
+        <div class="cert"><span class="badge-ic" style="--c:var(--violet)">TF</span><div><h3>HashiCorp Certified: Terraform Associate</h3><p>HashiCorp</p></div></div>
+        <div class="cert"><span class="badge-ic" style="--c:var(--amber)">SAA</span><div><h3>AWS Certified Solutions Architect, Associate</h3><p>Amazon Web Services</p></div></div>
+        <div class="cert"><span class="badge-ic" style="--c:var(--blue)">AZ-104</span><div><h3>Microsoft Certified: Azure Administrator Associate</h3><p>Microsoft</p></div></div>
+        <div class="cert"><span class="badge-ic" style="--c:var(--blue)">AZ-900</span><div><h3>Microsoft Certified: Azure Fundamentals</h3><p>Microsoft</p></div></div>
+        <div class="cert"><span class="badge-ic" style="--c:var(--green)">PY</span><div><h3>Python (Basic) Certification</h3><p>HackerRank</p></div></div>
+        <div class="cert"><span class="badge-ic" style="--c:var(--green)">5★</span><div><h3>5-Star Python Badge</h3><p>HackerRank</p></div></div>
+      </div>
+
+      <div class="edu reveal">
+        <h3>Education</h3>
+        <p><strong>Bachelor of Technology, Electronics and Communication Engineering</strong><br>Adikavi Nannaya University, Rajahmundry, Andhra Pradesh. 2018 to 2022.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="sec-head reveal"><h2>Contact</h2></div>
+      <div class="panel contact reveal">
+        <p class="c-lead">Have infrastructure to build, fix or scale? Email is the fastest way to reach me.</p>
+        <a class="mail" href="mailto:saianildeyyala@gmail.com">saianildeyyala@gmail.com</a>
+        <div class="c-actions">
+          <button class="btn primary magnetic" id="copy-email" type="button" data-copy="saianildeyyala@gmail.com">Copy email</button>
+          <a class="btn ghost magnetic" href="https://www.linkedin.com/in/sai-anil-kumar-deyyala/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn ghost magnetic" href="https://github.com/SaiAnilKumarDeyyala" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn ghost magnetic" href="assets/Sai_Anil_Kumar_Resume.pdf" download>Résumé</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>&copy; <span id="year">2026</span> Sai Anil Kumar Deyyala. Plain HTML, CSS and JavaScript, hosted on GitHub Pages.</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
